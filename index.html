@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Cervezas Recomendadas">
+    <title>Cervezas Recomendadas</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <span class="header-section section1"></span>
+        <span class="header-section section2"></span>
+        <span class="header-section section3"></span>
+        <span class="header-section section4"></span>
+    </header>
+    <div class="container">
+        <div class="container-content">
+            <form class="form" id="recommendation-form">
+                <div class="ingredients">
+                    <label class="ingredients-label" for="ingredients">
+                        Ingrese los ingredientes de su platillo a emparejar con cerveza
+                    </label>
+                    <input class="text-input" required type="text" name="ingredients" id="ingredients" placeholder="Ej: papa, arroz..." />
+                </div>
+                <input class="submit-input" type="submit" value="Aceptar">
+            </form>
+            <div class="results hidden">
+                <div class="results-title">
+                    Resultados
+                </div>
+                <div class="results-content" id="results"></div>
+            </div>
+        </div>
+        <div class="typeform">
+            <div class="typeform-content">
+                <div data-tf-widget="r7ZHDmVj" data-tf-hide-footer style="width:100%;height:600px;"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
