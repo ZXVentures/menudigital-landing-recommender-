@@ -6,7 +6,7 @@ This project is created for Menú Digital Recommerder
 
 ## How to install this project
 
-This project has git submodules, for clone the repository execute the next command:
+For clone the repository execute the next command:
 
 `git clone https://github.com/ZXVentures/menudigital-landing-recommender.github.io.git`
 
@@ -20,15 +20,15 @@ For save changes in the repository execute the next command in the ``main`` bran
   git push
 ```
 
-Before change branch is recommended make a pull of this, execute the next command:
+Before change the branch is recommended make a pull of this, execute the next command:
 
 ``git pull origin main``
 
 To publish changes in the GitHub page clone the ``gh-pages`` branch, execute the next command:
 
-``git clone --branch gh-pages``
+``git checkout gh-pages``
 
-or generate a pull in this branch if have the branch in local yet:
+or generate a pull if this branch already exist in local:
 
 ``git pull origin gh-pages``
 

@@ -9,6 +9,15 @@ const generals = () => {
             e.preventDefault();
             let ingredients = e.target.elements["ingredients"].value
             let results = document.querySelector('#results');
+            let loading = document.querySelector('.results-loading')
+            let resultsSection = document.querySelector('.results');
+            
+            if(resultsSection) {
+                resultsSection.classList.remove('hidden')
+            }
+            if(loading) {
+                loading.classList.remove('hidden')
+            }
 
             if(results) {
                 fetch("https://hrlbvfy9yf.execute-api.us-east-2.amazonaws.com/default/recomendador?ingredients=" + ingredients, {
@@ -24,6 +33,7 @@ const generals = () => {
                     return response.json();
                 })
                 .then(function(data) {
+                    loading.classList.add('hidden')
                     if (data) {
 
                         if(results) {
@@ -46,11 +56,6 @@ const generals = () => {
                                     </div>`)
                                 });
                             }
-                        }
-
-                        let resultsSection = document.querySelector('.results');
-                        if(resultsSection) {
-                            resultsSection.classList.remove('hidden')
                         }
                     }
                 })
