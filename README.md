@@ -8,7 +8,7 @@ This project is created for Menú Digital Recommerder
 
 This project has git submodules, for clone the repository execute the next command:
 
-`git clone https://github.com/ZXVentures/menudigital-landing-recommender-.git`
+`git clone https://github.com/ZXVentures/menudigital-landing-recommender.github.io.git`
 
 ## How to publish changes
 
@@ -26,7 +26,7 @@ Before change branch is recommended make a pull of this, execute the next comman
 
 To publish changes in the GitHub page clone the ``gh-pages`` branch, execute the next command:
 
-``git clone -b gh-pages``
+``git clone --branch gh-pages``
 
 or generate a pull in this branch if have the branch in local yet:
 
