@@ -1,6 +1,6 @@
-# beer-recommendations.github.io
+# Beer Recommender
 
-# Getting Started
+## Getting Started
 
 This project is created for Menú Digital Recommerder
 
@@ -39,3 +39,9 @@ and excecute the next command:
   git merge main
   git push
 ```
+
+## How view the site
+
+For view the site in production use this url:
+
+``https://zxventures.github.io/menudigital-landing-recommender.github.io/``
