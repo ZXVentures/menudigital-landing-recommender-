@@ -23,10 +23,9 @@ const generals = () => {
                 fetch("https://hrlbvfy9yf.execute-api.us-east-2.amazonaws.com/default/recomendador?ingredients=" + ingredients, {
                     method: "GET",
                     headers: {
-                      "Access-Control-Allow-Origin": "*",
-                      "Content-Type": "application/json",
-                      "cache-control": "no-cache", 
-                      "x-api-key": "VvhM8pu31Z3IXiDmiGxbGzoILmMVhOU7zS1Nveff"
+                        "Access-Control-Request-Method": "GET",
+                        "Content-Type": "application/json",
+                        /* "x-api-key": "VvhM8pu31Z3IXiDmiGxbGzoILmMVhOU7zS1Nveff" */
                     }
                 })
                 .then(function(response) {
